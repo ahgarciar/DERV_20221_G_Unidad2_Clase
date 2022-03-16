@@ -56,7 +56,7 @@ public class Raycaster_Code : MonoBehaviour
         //origen, dirección
         Gizmos.DrawRay(transform.position, transform.forward * distancia);
 
-        //Gizmos.DrawWireCube(transform.position, new Vector3(2, 2, 2));
+        Gizmos.DrawWireCube(transform.position, new Vector3(2, 2, 2));
 
 
     }

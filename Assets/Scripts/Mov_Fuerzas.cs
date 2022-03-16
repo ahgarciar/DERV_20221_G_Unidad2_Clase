@@ -24,9 +24,9 @@ public class Mov_Fuerzas : MonoBehaviour
     private void FixedUpdate()
     {
         //
-        //Vector3.forward  <<<--- coordenadas globales 
-        //transform.forward <<<-- coordenadas locales
-        //new Vector3(0, 0, 1)  <<<-- coordenadas personalizadas
+        //Vector3.forward 
+        //transform.forward 
+        //new Vector3(0, 0, 1)  
 
         if (Input.GetKey(KeyCode.W))
         {            

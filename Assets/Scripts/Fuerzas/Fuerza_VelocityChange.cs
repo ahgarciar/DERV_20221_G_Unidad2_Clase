@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fuerza_Acceleration : MonoBehaviour
+public class Fuerza_VelocityChange : MonoBehaviour
 {
     Rigidbody rb;
 
@@ -23,8 +23,8 @@ public class Fuerza_Acceleration : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //rb.AddForce(new Vector3(0f, 0f, 0f), ForceMode.Acceleration); 
-        //rb.AddForce(Vector3.right * 20f, ForceMode.Acceleration);  //grobales
-        rb.AddForce(transform.right * speedFuerza, ForceMode.Acceleration);  //local
+        //rb.AddForce(new Vector3(0f, 0f, 0f), ForceMode.VelocityChange); 
+        rb.AddForce(Vector3.right * speedFuerza, ForceMode.VelocityChange);  
+        //rb.AddForce(transform.right * speedFuerza, ForceMode.VelocityChange);  
     }
 }
