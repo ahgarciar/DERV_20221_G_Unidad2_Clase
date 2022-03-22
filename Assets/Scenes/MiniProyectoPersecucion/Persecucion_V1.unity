@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 685406347}
   - component: {fileID: 685406346}
   - component: {fileID: 685406345}
+  - component: {fileID: 685406349}
   m_Layer: 0
   m_Name: AreaProhibida
   m_TagString: Untagged
@@ -394,11 +395,42 @@ Transform:
   m_GameObject: {fileID: 685406344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.93, y: 1.4, z: 10.32}
-  m_LocalScale: {x: 21.0245, y: 1, z: 18.219849}
+  m_LocalScale: {x: 30.763048, y: 1, z: 25.44402}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &685406349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685406344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d485ee93f2c9f2c45886f133f21e763f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemigo: {fileID: 2061070409}
+--- !u!1 &981543341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3509801511191338420, guid: a2dd8137dc376fd48b6278f36f607a0a, type: 3}
+  m_PrefabInstance: {fileID: 3509801509450709648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &981543345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981543341}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5342581, y: 2.7809834, z: 2.992815}
+  m_Center: {x: -0.01883781, y: -0.020443916, z: 0.08402729}
 --- !u!1 &1310207106
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,6 +726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2061070412}
   - component: {fileID: 2061070411}
+  - component: {fileID: 2061070410}
   m_Layer: 0
   m_Name: Enemigo
   m_TagString: Untagged
@@ -701,6 +734,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2061070410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061070409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21e0d39b6b76444f9058f79077ad888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personajeJugador: {fileID: 0}
 --- !u!54 &2061070411
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -710,12 +756,12 @@ Rigidbody:
   m_GameObject: {fileID: 2061070409}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.1
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!4 &2061070412
 Transform:
@@ -740,9 +786,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3509801509691837684, guid: a2dd8137dc376fd48b6278f36f607a0a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509801509872845937, guid: a2dd8137dc376fd48b6278f36f607a0a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3509801511191338420, guid: a2dd8137dc376fd48b6278f36f607a0a, type: 3}
       propertyPath: m_Name
       value: Personaje
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509801511191338420, guid: a2dd8137dc376fd48b6278f36f607a0a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509801511191338421, guid: a2dd8137dc376fd48b6278f36f607a0a, type: 3}
+      propertyPath: m_Drag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509801511191338421, guid: a2dd8137dc376fd48b6278f36f607a0a, type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 3509801511191338422, guid: a2dd8137dc376fd48b6278f36f607a0a, type: 3}
       propertyPath: m_RootOrder
