@@ -19,6 +19,18 @@ public class CreacionBala : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //new Vector3(x, 0.5, 0.25)
         rb.AddForce(transform.forward * velocidad, ForceMode.Impulse);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!collision.gameObject.tag.Equals("Objeto_Pared"))
+        {
+
+            Destroy(collision.gameObject);
+            //Destroy(this.gameObject);
+        }
+
     }
 }

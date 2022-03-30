@@ -91,9 +91,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1561644546566546274}
-  - component: {fileID: 1561644546558811726}
   - component: {fileID: 1561644546566335405}
   - component: {fileID: 1561644546566335404}
+  - component: {fileID: 2693301863586335324}
   m_Layer: 0
   m_Name: Bullet_045
   m_TagString: Untagged
@@ -117,25 +117,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1561644546558811726
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561644546566335406}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 4f548ea9328f6224b9a422848318b07a, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1561644546566335405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +146,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &2693301863586335324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561644546566335406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011738706, y: 0.009202909, z: 0.027745787}
+  m_Center: {x: 0.00032237987, y: 0.0008059095, z: 0.013973857}
 --- !u!1 &1561644546566372314
 GameObject:
   m_ObjectHideFlags: 0
